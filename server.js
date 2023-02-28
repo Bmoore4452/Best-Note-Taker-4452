@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.use("/", homeRoutes);
 app.use("/api", notes);
+app.use("/", homeRoutes);
 
 
 app.listen(PORT, () =>
