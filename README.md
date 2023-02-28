@@ -9,6 +9,7 @@ Note taking app to keep track of the topics learned in class
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
+* [Screenshot](#screenshot)
 * [Questions](#questions)
 
 
@@ -20,6 +21,10 @@ When a user reaches the website, they can click on the get started button. Then 
 
 ## Credits
 N/A
+
+## Screenshot
+
+![Screenshot](./Assets/best-note-taker-4452.herokuapp.com_notes.png)
 
 ## Questions
 Here is a link to my Github account:
