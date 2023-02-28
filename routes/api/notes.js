@@ -1,15 +1,15 @@
-const router = require("express").Router();
+const router = require('express').Router();
 const {
   readFromFile,
   readAndAppend,
   writeToFile,
-} = require("../../helpers/fsUtils");
+} = require('../../helpers/fsUtils');
 
-router.get("/notes", (request, response) => {
-  readFromFile("./db/db.json").then((data) => response.json(JSON.parse(data)));
+router.get('/notes', (request, response) => {
+  readFromFile('./db/db.json').then((data) => response.json(JSON.parse(data)));
 });
 
-router.post("/notes", (request, response) => {
+router.post('/notes', (request, response) => {
   console.log(request.body);
 
   const { title, text } = request.body;
@@ -20,7 +20,7 @@ router.post("/notes", (request, response) => {
       text,
     };
 
-    readAndAppend(newNote, "./db/db.json");
+    readAndAppend(newNote, './db/db.json');
     response.json(`Note added successfully 🚀`);
   }
 });
